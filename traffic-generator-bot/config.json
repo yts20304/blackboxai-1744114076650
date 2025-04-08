@@ -1,0 +1,89 @@
+{
+  "telegram": {
+    "token": "7992289105:AAHt5nc6-0yAIdoP5fwyhpFGO10BZHVKxo8"
+  },
+  "browser": {
+    "headless": true,
+    "defaultViewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "slowMo": 10
+  },
+  "trafficGeneration": {
+    "searchEngines": {
+      "google": "https://www.google.com"
+    },
+    "targetDomains": [
+      "example.com"
+    ],
+    "keywords": [
+      "example keyword 1",
+      "example keyword 2",
+      "example keyword 3"
+    ],
+    "sessionsPerDay": 10,
+    "pagesPerSession": {
+      "min": 2,
+      "max": 5
+    },
+    "sessionDuration": {
+      "min": 120,
+      "max": 600
+    }
+  },
+  "adSimulation": {
+    "enabled": true,
+    "viewProbability": 0.7,
+    "clickProbability": 0.2,
+    "minViewTimeSeconds": 3,
+    "maxViewTimeSeconds": 15
+  },
+  "userAgents": {
+    "mode": "random",
+    "rotationFrequency": "session",
+    "types": ["desktop", "mobile"]
+  },
+  "antiDetection": {
+    "enableMouseMovements": true,
+    "enableRandomScrolling": true,
+    "enableRandomPauses": true,
+    "pauseDuration": {
+      "min": 1000,
+      "max": 5000
+    },
+    "scrollBehavior": {
+      "speed": {
+        "min": 200,
+        "max": 800
+      },
+      "distance": {
+        "min": 100,
+        "max": 800
+      }
+    },
+    "mouseMovement": {
+      "speed": {
+        "min": 800,
+        "max": 2000
+      }
+    },
+    "typingSpeed": {
+      "wpm": {
+        "min": 30,
+        "max": 80
+      }
+    }
+  },
+  "scheduler": {
+    "enabled": true,
+    "timezone": "UTC",
+    "dailyStartTime": "06:00",
+    "dailyEndTime": "22:00"
+  },
+  "logging": {
+    "level": "info",
+    "maxFiles": 5,
+    "maxSize": "10m"
+  }
+}
