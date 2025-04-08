@@ -1,0 +1,6 @@
+2025-04-08T12:00:10.036Z [ERROR]: Error launching browser: Failed to launch the browser process!
+[0408/120009.882450:ERROR:zygote_host_impl_linux.cc(100)] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+
+TROUBLESHOOTING: https://pptr.dev/troubleshooting
+
